@@ -66,8 +66,8 @@ public class LoginFrame extends JFrame {
         add(comboBox);
         //背景
         bgLabel = new JLabel();
-        Icon bgicon = new ImageIcon(LoginFrame.class.getResource("/img/pic.jpg"));
-        bgLabel.setIcon(bgicon);
+        Icon bgIcon = new ImageIcon(LoginFrame.class.getResource("/img/pic.jpg"));
+        bgLabel.setIcon(bgIcon);
         bgLabel.setBounds(0,0,640,480);
         add(bgLabel);
 

@@ -2,12 +2,12 @@ package Daka;
 
 import javax.swing.*;
 import java.awt.*;
-import java.net.URL;
 
 /**
  * GridLayout网格布局示例
  * 2019/3/26
  */
+
 public class GridLayoutTest extends JFrame {
     //定义一个面板数组
     private JPanel[] panels;
