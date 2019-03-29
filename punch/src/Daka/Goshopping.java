@@ -7,7 +7,7 @@ package com.daka.shangchang;
 public class Goshopping {
     public static void main(String[] args) {
         Market market = new WallMarket();
-        market.name ="沃尔玛";
+        market.name = "沃尔玛";
         market.goods = "七匹狼西服";
         market.shop();
         market = new TaobaoMarket();

@@ -50,7 +50,7 @@ public class FileTest {
                 //查完该文件信息后，删除文件
                 file.delete();
                 System.out.println("文件已被删除！");
-            }else{  //文件不可读
+            } else {  //文件不可读
                 System.out.println("文件不可读！");
             }
 

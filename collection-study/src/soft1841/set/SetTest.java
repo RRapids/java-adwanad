@@ -24,18 +24,18 @@ public class SetTest {
         //用for循环遍历set集合
         System.out.println("for循环遍历结果");
         Object[] array = set.toArray();
-        for (int i = 0,len = set.size();i<len;i++){
+        for (int i = 0, len = set.size(); i < len; i++) {
             System.out.print(array[i] + " ");
         }
         System.out.println("");
 
         //用Iterator迭代器便里set集合
         Iterator<String> iterator = set.iterator();
-        while (iterator.hasNext()){
-            System.out.print(iterator.next()+" ");
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
         }
         System.out.println("");
         //用Lambda表达式遍历set集合
-        set.forEach(s -> System.out.print(s+" "));
+        set.forEach(s -> System.out.print(s + " "));
     }
 }

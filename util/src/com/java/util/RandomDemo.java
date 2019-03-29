@@ -4,6 +4,7 @@ import java.util.Random;
 
 /**
  * 随机数类程序
+ *
  * @author 79876
  * 2019.3.12
  */

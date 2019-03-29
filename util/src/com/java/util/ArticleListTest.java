@@ -17,22 +17,23 @@ public class ArticleListTest {
         //SimpleDateFormat格式化日期
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         //向集合添加元素
-        list.add(new Article(1,"《亲爱的安德烈》《孩子你慢慢来》","龙应台",simpleDateFormat.parse("2019-03-12 22:13:22")));
-        list.add(new Article(2,"《得未曾有》《月童渡河》《莲花》","安妮宝贝",simpleDateFormat.parse("2019-02-13 22:13:22")));
-        list.add(new Article(3,"《白夜行》《嫌疑人x的献身》","东野圭吾",simpleDateFormat.parse("2019-02-14 22:13:22")));
+        list.add(new Article(1, "《亲爱的安德烈》《孩子你慢慢来》", "龙应台", simpleDateFormat.parse("2019-03-12 22:13:22")));
+        list.add(new Article(2, "《得未曾有》《月童渡河》《莲花》", "安妮宝贝", simpleDateFormat.parse("2019-02-13 22:13:22")));
+        list.add(new Article(3, "《白夜行》《嫌疑人x的献身》", "东野圭吾", simpleDateFormat.parse("2019-02-14 22:13:22")));
 
         System.out.println("id    标题                 作者    时间");
         //用Iterator迭代器输出Article
         Iterator<Article> iterator = list.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Article article = iterator.next();
             String result;
             result = timeCal(simpleDateFormat.format(article.getTime()));
             //当title大于10个字符时，省略后部
-            System.out.println(article.getId()+"  "+article.getTitle().substring(0,10)+"..."+
-                    article.getAuthor()+"  "+result);
+            System.out.println(article.getId() + "  " + article.getTitle().substring(0, 10) + "..." +
+                    article.getAuthor() + "  " + result);
         }
     }
+
     private static String timeCal(String time) {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date d1;

@@ -60,17 +60,17 @@ public class ImageFrame extends JFrame {
         //时间加入左侧
         timeLabel = new JLabel(String.valueOf(today));
         //路径
-        String path=srcFile.getAbsolutePath();
+        String path = srcFile.getAbsolutePath();
         //大小
         long size = srcFile.length();
         //大小加入下侧
         sizeLabel = new JLabel(String.valueOf(size));
         //路径加入下侧
         pathLabel = new JLabel(path);
-        add(sizeLabel,BorderLayout.SOUTH);
-        add(pathLabel,BorderLayout.SOUTH);
-        add(timeLabel,BorderLayout.WEST);
-        add(imageLabel,BorderLayout.CENTER);
+        add(sizeLabel, BorderLayout.SOUTH);
+        add(pathLabel, BorderLayout.SOUTH);
+        add(timeLabel, BorderLayout.WEST);
+        add(imageLabel, BorderLayout.CENTER);
     }
 
 

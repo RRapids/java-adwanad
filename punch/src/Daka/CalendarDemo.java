@@ -5,6 +5,7 @@ import java.util.Date;
 
 /**
  * Calendar类
+ *
  * @author 腾飞
  * 2019.3.22
  */
@@ -18,14 +19,14 @@ public class CalendarDemo {
         int hour = calendar.get(Calendar.HOUR);
         int minute = calendar.get(Calendar.MINUTE);
         int second = calendar.get(Calendar.SECOND);
-        System.out.println("当前时间为："+year+"-"+month+"-"+day+"-"+hour+":"+minute+":"+second);
+        System.out.println("当前时间为：" + year + "-" + month + "-" + day + "-" + hour + ":" + minute + ":" + second);
         //调用Calendar提供getTime()方法用来获取date对象
         //将Calender对象转化为date对象
         Date date = new Date();
         //获取单前毫秒数
         Long time = calendar.getTimeInMillis();
-        System.out.println("当前时间："+date);
-        System.out.println("当前毫秒数："+time);
+        System.out.println("当前时间：" + date);
+        System.out.println("当前毫秒数：" + time);
 
     }
 }

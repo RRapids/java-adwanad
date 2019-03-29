@@ -22,7 +22,7 @@ public class ListTest {
         System.out.println(list.get(index));
         System.out.println("******************");
         //用for循环输出所用元素
-        for (int i = 0;i<length;i++){
+        for (int i = 0; i < length; i++) {
             System.out.println(list.get(i));
         }
     }

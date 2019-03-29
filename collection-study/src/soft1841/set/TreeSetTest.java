@@ -15,8 +15,8 @@ public class TreeSetTest {
         //创建Iterator迭代器
         Iterator<Integer> it = set.iterator();
         System.out.println("Set集合中的元素");
-        while (it.hasNext()){
-            System.out.print(it.next()+" ");
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
         }
     }
 }

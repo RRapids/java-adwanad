@@ -10,6 +10,7 @@ import static java.time.temporal.ChronoUnit.YEARS;
 
 /**
  * Java 8时间和日期API 20例
+ *
  * @author 腾飞
  * 2019.3.15
  */
@@ -23,21 +24,21 @@ public class DataTime {
         int year = today1.getYear();
         int month = today1.getMonthValue();
         int day = today1.getDayOfMonth();
-        System.out.printf("Year: % d Month: % d day : %d t %n" ,year,month,day);
+        System.out.printf("Year: % d Month: % d day : %d t %n", year, month, day);
         //在java8中处理特定日期
-        LocalDate dateOfBirth = LocalDate.of(2010,1,12);
+        LocalDate dateOfBirth = LocalDate.of(2010, 1, 12);
         System.out.println("Your Date of birth is : " + dateOfBirth);
         //判断两个日期是否相等
-        LocalDate date1 = LocalDate.of(2014,12,2);
-        if (date1.equals(today)){
-            System.out.printf("Today %s and date %s are same date %n", today,date1);
+        LocalDate date1 = LocalDate.of(2014, 12, 2);
+        if (date1.equals(today)) {
+            System.out.printf("Today %s and date %s are same date %n", today, date1);
             //检查像生日这种周期性事件
-            LocalDate dateOfBirth1 = LocalDate.of(2010,1,14);
-            MonthDay birthday = MonthDay.of(dateOfBirth1.getMonth(),dateOfBirth1.getDayOfMonth());
+            LocalDate dateOfBirth1 = LocalDate.of(2010, 1, 14);
+            MonthDay birthday = MonthDay.of(dateOfBirth1.getMonth(), dateOfBirth1.getDayOfMonth());
             MonthDay currentMonthDay = MonthDay.from(today);
-            if (currentMonthDay.equals(birthday)){
+            if (currentMonthDay.equals(birthday)) {
                 System.out.println("Many Many happy returns of the day !!");
-            }else {
+            } else {
                 System.out.println("Sorry, today is not your birthday");
 
             }
@@ -51,7 +52,7 @@ public class DataTime {
         System.out.println("Time after 2 hours :" + newTime);
         //如何计算一周后的日期
         LocalDate nextWeek = today.plus(1, ChronoUnit.WEEKS);
-        System.out.println("Today is :"+today);
+        System.out.println("Today is :" + today);
         System.out.println("Date after 1 week : " + nextWeek);
         //计算一年前或一年后的日期
         LocalDate previousYear = today.minus(1, YEARS);
@@ -67,18 +68,18 @@ public class DataTime {
 
         //用Java判断日期是早于还是晚于另一个日期
         LocalDate tomorrow = LocalDate.of(2019, 3, 16);
-        if(tomorrow.isAfter(today)){
+        if (tomorrow.isAfter(today)) {
             System.out.println("Tomorrow comes after today");
         }
         LocalDate yesterday = today.minus(1, DAYS);
-        if(yesterday.isBefore(today)){
+        if (yesterday.isBefore(today)) {
             System.out.println("Yesterday is day before today");
         }
 
         //在Java 8中处理时区
         ZoneId america = ZoneId.of("America/New_York");
         LocalDateTime localtDateAndTime = LocalDateTime.now();
-        ZonedDateTime dateAndTimeInNewYork  = ZonedDateTime.of(localtDateAndTime, america );
+        ZonedDateTime dateAndTimeInNewYork = ZonedDateTime.of(localtDateAndTime, america);
         System.out.println("Current date and time in a particular timezone : " + dateAndTimeInNewYork);
 
         //信用卡到期这类固定日期，答案就在YearMonth
@@ -88,9 +89,9 @@ public class DataTime {
         System.out.printf("Your credit card expires on %s %n", creditCardExpiry);
 
         //在Java 8中检查闰年
-        if(today.isLeapYear()){
+        if (today.isLeapYear()) {
             System.out.println("This year is Leap year");
-        }else {
+        } else {
             System.out.println("2019 is not a Leap year");
         }
 
@@ -98,7 +99,7 @@ public class DataTime {
         LocalDate java8Release = LocalDate.of(2019, Month.MARCH, 14);
         Period periodToNextJavaRelease = Period.between(today, java8Release);
         System.out.println("Months left between today and Java 8 release : "
-                + periodToNextJavaRelease.getMonths() );
+                + periodToNextJavaRelease.getMonths());
 
         //包含时差信息的日期和时间
         LocalDateTime datetime = LocalDateTime.of(2019, Month.MARCH, 14, 19, 30);
@@ -129,7 +130,7 @@ public class DataTime {
         }
 
         //在Java 8中如何把日期转换成字符串
-        LocalDateTime arrivalDate  = LocalDateTime.now();
+        LocalDateTime arrivalDate = LocalDateTime.now();
         try {
             DateTimeFormatter format = DateTimeFormatter.ofPattern("MMM dd yyyy  hh:mm a");
             String landing = arrivalDate.format(format);

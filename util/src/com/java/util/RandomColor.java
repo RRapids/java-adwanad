@@ -11,6 +11,7 @@ import java.util.Random;
 
 /**
  * 随机颜色
+ *
  * @author 79876
  * 2019.3.12
  */
@@ -42,7 +43,7 @@ public class RandomColor {
         g.setColor(Color.BLACK);
         int number = 4;
         String codeNum = "";
-        int [] code = new int[3];
+        int[] code = new int[3];
         for (int i = 0; i < number; i++) {
             int num = random.nextInt(10) + 48;
             int uppercase = random.nextInt(26) + 65;
@@ -50,14 +51,14 @@ public class RandomColor {
             code[0] = num;
             code[1] = uppercase;
             code[2] = lowercase;
-            codeNum += (char)code[random.nextInt(3)];
+            codeNum += (char) code[random.nextInt(3)];
         }
-        g.drawString(codeNum,40,30);
+        g.drawString(codeNum, 40, 30);
 
         //干扰线
         for (int i = 0; i < 20; i++) {
 
-            Color color1 = new Color(greenRandom,blueRandom,redRandom);
+            Color color1 = new Color(greenRandom, blueRandom, redRandom);
             int x = random.nextInt(50);
             int y = random.nextInt(60);
             int xl = random.nextInt(160);

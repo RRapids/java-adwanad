@@ -10,7 +10,7 @@ public class FlowLayoutPositionTest extends JFrame {
         setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
         JLabel jLabel = new JLabel("下面四句诗，哪一个是描写夏天的？");
         c.add(jLabel);
-        JLabel jLabel2= new JLabel("A.秋风萧瑟天气凉，树木摇荡露为霜。");
+        JLabel jLabel2 = new JLabel("A.秋风萧瑟天气凉，树木摇荡露为霜。");
         c.add(jLabel2);
         JLabel jLabel3 = new JLabel("B.白雪纷纷何所似，撒盐空中差可似。");
         c.add(jLabel3);
@@ -19,15 +19,15 @@ public class FlowLayoutPositionTest extends JFrame {
         JLabel jLabel5 = new JLabel("D.竹外桃花两三枝，春江水暖鸭先知。");
         c.add(jLabel5);
         //设置窗体大小
-        setSize(300,300);
+        setSize(300, 300);
         setResizable(false);
         //窗体关闭方式
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         //设置窗体可见
         setVisible(true);
     }
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         new FlowLayoutPositionTest();
     }
 }

@@ -7,7 +7,7 @@ public class FileDemo {
     public static void main(String[] args) throws IOException {
         File file = new File("D:/README.md");
         //判定如果file不存在，则创建新文件
-        if (!file.exists()){
+        if (!file.exists()) {
             file.createNewFile();
         }
     }

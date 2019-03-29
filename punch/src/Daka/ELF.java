@@ -4,7 +4,7 @@ package xunlian2;
  * 袁腾飞 2019.3.10
  * 定义ELF类，完全继承Dosong接口和Domove接口
  */
-public class ELF implements Dosong,Domove {
+public class ELF implements Dosong, Domove {
     @Override
     public void move() {
         System.out.println("可移动");

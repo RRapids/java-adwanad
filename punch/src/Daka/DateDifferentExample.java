@@ -7,6 +7,7 @@ import java.util.Date;
 
 /**
  * 计算两个时间的差值
+ *
  * @author 腾飞
  * 2019/3/18
  */
@@ -25,7 +26,7 @@ public class DateDifferentExample {
         Date d3;
         long diff = 0;
         //通过SimpleDateFormat的对象把String类型的时间对象转化成Date类型的对象
-        try{
+        try {
             d1 = format.parse(startTime);
             d2 = format.parse(stopTime);
             d3 = format.parse(time2);
@@ -36,21 +37,21 @@ public class DateDifferentExample {
             diff = date.getTime() - d3.getTime();
 
 
-        }catch (ParseException e){
+        } catch (ParseException e) {
             e.printStackTrace();
         }
         //将毫秒分别换算成秒、分、小时、天
         //long diffSeconds = diff / 1000;
         long diffMinutes = diff / (1000 * 60);
         long diffHours = diff / (1000 * 60 * 60);
-        long diffDays = diff / (1000 * 60 * 60 *24);
+        long diffDays = diff / (1000 * 60 * 60 * 24);
 
         //System.out.println(startTime + " " +Math.abs(diffSeconds) + " 秒前");
 
-        System.out.println(startTime + " "+ Math.abs(diffMinutes) + " 分前");
-        System.out.println(stopTime +" "+ Math.abs(diffHours) + " 小时前");
-        System.out.println(time2 +" "+ Math.abs(diffDays) + " 天前");
-        System.out.println(format.format(date) +" "+" 刚刚");
+        System.out.println(startTime + " " + Math.abs(diffMinutes) + " 分前");
+        System.out.println(stopTime + " " + Math.abs(diffHours) + " 小时前");
+        System.out.println(time2 + " " + Math.abs(diffDays) + " 天前");
+        System.out.println(format.format(date) + " " + " 刚刚");
 
     }
 }

@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * Integer类的练习
+ *
  * @author 79876
  * 2019.3.12
  */
@@ -27,17 +28,17 @@ public class IntegerDemo {
         System.out.println("456八进制表示为：" + str4);
         System.out.println("456十五进制表示为：" + str5);
         System.out.println("------------分割线-------------");
-        System.out.println("456转化7进制：" + convert(num,7));
+        System.out.println("456转化7进制：" + convert(num, 7));
 
     }
 
-    private  static  String convert(int num,int radix){
+    private static String convert(int num, int radix) {
         //创建一个StringBuffer，用来存放结果字符串
         StringBuffer stringBuffer = new StringBuffer();
         //被除数不为0
-        while (num != 0){
+        while (num != 0) {
             //求出余数
-            int  remainder =num % radix;
+            int remainder = num % radix;
             //将余数加入stringBuffer
             stringBuffer.append(String.valueOf(remainder));
             //更新被除数为商

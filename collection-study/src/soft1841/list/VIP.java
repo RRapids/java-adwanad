@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * List Map  Set综合
+ *
  * @author 腾飞
  * 2019.3.20
  */
@@ -23,24 +24,24 @@ public class VIP {
 
         //遍历输出所有信息（map集合调动entry方法后，foreach遍历输出）
         Set<Map.Entry<String, Integer>> ent = map.entrySet();
-        System.out.println("姓名"+"\t\t"+"会员号"+"\t\t"+"积分");
-        for(Map.Entry<String, Integer> e:ent) {
+        System.out.println("姓名" + "\t\t" + "会员号" + "\t\t" + "积分");
+        for (Map.Entry<String, Integer> e : ent) {
             list.add(e.getValue());
             //输出所有会员的积分
-            System.out.println(e.getKey()+"\t\t"+e.getValue());
+            System.out.println(e.getKey() + "\t\t" + e.getValue());
         }
         //输出分数前三名的会员信息，集合的工具类进行排序
         Collections.sort(list);
         System.out.println("---------积分前三名----------");
-        System.out.println("姓名"+"\t\t"+"会员号"+"\t\t"+"积分");
+        System.out.println("姓名" + "\t\t" + "会员号" + "\t\t" + "积分");
         //输出前三名的成绩（成绩由高到低的输出）
-        for(int i=1;i<=3;i++) {
+        for (int i = 1; i <= 3; i++) {
             //遍历map集合
-            for(Map.Entry<String, Integer> e:ent) {
+            for (Map.Entry<String, Integer> e : ent) {
                 //获取前三名的号
-                if(list.get(list.size()-i)==e.getValue()) {
+                if (list.get(list.size() - i) == e.getValue()) {
                     set.add(e.getKey());
-                    System.out.println(e.getKey()+"\t\t"+e.getValue());
+                    System.out.println(e.getKey() + "\t\t" + e.getValue());
                 }
             }
         }
