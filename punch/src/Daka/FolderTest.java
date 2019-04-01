@@ -24,7 +24,6 @@ public class FolderTest {
                 list.add(f);
                 System.out.println(f);
             }
-
         }
     }
 }
