@@ -15,7 +15,6 @@ public class TxtReaderFrame extends JFrame implements ActionListener {
     private Icon icon;
 
 
-
     public TxtReaderFrame(){
         init();
         setTitle("文本阅读窗体");
