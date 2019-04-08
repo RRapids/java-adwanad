@@ -1,10 +1,10 @@
-package Daka;
+package com.soft1841.MR;
 
 /**
  * 继承Thread类 创建并启动线程
  */
-public class ThreadTest extends Thread {        //指定类继承Threaad类
-    private int count = 10;
+public class ThreadTest extends Thread {        //指定类继承Thread类
+        private int count = 10;
 
     @Override
     //重写run方法
@@ -18,7 +18,6 @@ public class ThreadTest extends Thread {        //指定类继承Threaad类
             }
         }
     }
-
     public static void main(String[] args) {
         //创建线程对象
         ThreadTest test = new ThreadTest();

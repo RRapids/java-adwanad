@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Io-study/Io-study.iml" filepath="$PROJECT_DIR$/Io-study/Io-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection-study/collection-study.iml" filepath="$PROJECT_DIR$/collection-study/collection-study.iml" />
       <module fileurl="file://D:/demo/demo/src/main/main.iml" filepath="D:/demo/demo/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/punch/punch.iml" filepath="$PROJECT_DIR$/punch/punch.iml" />
