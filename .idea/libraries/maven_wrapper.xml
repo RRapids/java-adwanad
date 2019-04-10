@@ -2,8 +2,10 @@
   <library name="maven-wrapper">
     <CLASSES>
       <root url="jar://D:/demo/demo/.mvn/wrapper/maven-wrapper.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jl1.0.jar.zip!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="jar://$USER_HOME$/Downloads/jl1.0.jar.zip!/" recursive="false" />
   </library>
 </component>
