@@ -34,6 +34,7 @@ public class ViewImage extends JFrame implements ActionListener {
         //定义左侧容器，为边界布局
         leftContainer = new Container();
         leftContainer.setLayout(new BorderLayout());
+
         //定义leftPanel为网格布局
         leftPanel = new JPanel(new GridLayout(5, 2, 10, 10));
         //右侧面板

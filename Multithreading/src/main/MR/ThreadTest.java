@@ -1,10 +1,10 @@
-package com.soft1841.MR;
+package main.MR;
 
 /**
  * 继承Thread类 创建并启动线程
  */
 public class ThreadTest extends Thread {        //指定类继承Thread类
-        private int count = 10;
+    private int count = 10;
 
     @Override
     //重写run方法
@@ -18,6 +18,7 @@ public class ThreadTest extends Thread {        //指定类继承Thread类
             }
         }
     }
+
     public static void main(String[] args) {
         //创建线程对象
         ThreadTest test = new ThreadTest();
