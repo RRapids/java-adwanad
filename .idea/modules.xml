@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/collection-study/collection-study.iml" filepath="$PROJECT_DIR$/collection-study/collection-study.iml" />
       <module fileurl="file://D:/demo/demo/src/main/main.iml" filepath="D:/demo/demo/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/punch/punch.iml" filepath="$PROJECT_DIR$/punch/punch.iml" />
-      <module fileurl="file://D:/demo/demo/src/test/test.iml" filepath="D:/demo/demo/src/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
     </modules>
   </component>

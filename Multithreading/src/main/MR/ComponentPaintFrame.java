@@ -8,45 +8,48 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * 图片
+ * 组件
  */
+
 public class ComponentPaintFrame extends JFrame {
     private JPanel jPanel;
     private JButton jButton;
-    public ComponentPaintFrame(){
+
+    public ComponentPaintFrame() {
         init();
         setTitle("组件绘制");
-        setSize(800,600);
+        setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    private void init(){
+
+    private void init() {
         //创建JPanel对象的同时，将背景图绘制上去
-        JPanel jPanel = new JPanel() {
+        jPanel = new JPanel() {
             protected void paintComponent(Graphics g) {
                 try {
                     BufferedImage bg = ImageIO.read(new File("D:/2.jpg"));
-                    g.drawImage(bg,0,0,getWidth(),getHeight(),null);
+                    g.drawImage(bg, 0, 0, getWidth(), getHeight(), null);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         };
-        jPanel.setLayout(new FlowLayout(FlowLayout.CENTER,200,200));
+        jPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 200, 200));
         add(jPanel);
-        JButton jButton = new JButton(){
-            protected void paintComponent(Graphics g){
+        jButton = new JButton() {
+            protected void paintComponent(Graphics g) {
                 try {
                     BufferedImage bg = ImageIO.read(new File("D:/button.png"));
-                    g.drawImage(bg,0,0,getWidth(),getHeight(),null);
-                    g.drawString("按钮",55,25);
+                    g.drawImage(bg, 0, 0, getWidth(), getHeight(), null);
+                    g.drawString("按钮", 55, 25);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         };
-        jButton.setPreferredSize(new Dimension(150,50));
+        jButton.setPreferredSize(new Dimension(150, 50));
         //不获取焦点
         jButton.setFocusPainted(false);
         //背景透明

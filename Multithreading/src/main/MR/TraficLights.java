@@ -37,7 +37,7 @@ public class TraficLights extends JFrame {
         //标签
         bgLabel = new JLabel();
         bgLabel.setBackground(Color.GREEN);
-        bgLabel.setIcon(new ImageIcon(TitledBorder.class.getResource("/resources/Green.png")));
+        bgLabel.setIcon(new ImageIcon(TitledBorder.class.getResource("/img/Green.png")));
         bgPanel.add(bgLabel,BorderLayout.CENTER);
         TurnColor tc = new TurnColor();
         tc.setBgLabel(bgLabel);

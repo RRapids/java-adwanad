@@ -22,19 +22,19 @@ public class TurnColor extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/resources/Yellow.png"))); // 黄灯
+            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/img/Yellow.png"))); // 黄灯
             try {
                 Thread.sleep(2000); // 线程休眠2秒
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/resources/Red.png"))); // 红灯
+            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/img/Red.png"))); // 红灯
             try {
                 Thread.sleep(2000); // 线程休眠8秒
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/resources/Green.png"))); // 绿灯
+            bgLabel.setIcon(new ImageIcon(TraficLights.class.getResource("/img/Green.png"))); // 绿灯
         }
     }
 }
