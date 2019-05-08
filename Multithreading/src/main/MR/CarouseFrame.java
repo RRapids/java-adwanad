@@ -18,11 +18,13 @@ public class CarouseFrame extends JFrame {
     }
 
     private void init(){
+
         bgLabel = new JLabel();
         add(bgLabel);
         CarouseThread ct = new CarouseThread();
         ct.setBgLabel(bgLabel);
         new Thread(ct).start();
+
     }
 
     public static void main(String[] args) {

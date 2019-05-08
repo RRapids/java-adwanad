@@ -12,7 +12,7 @@ public class LoginFrame extends JFrame implements ActionListener {
     private JLabel accountLabel, passwordLabel;
     private JTextField accountField;
     private JPasswordField passwordField;
-    private BgButton loginBtn,centerBtn;
+    private BgButton loginBtn, centerBtn;
     private int width;
     private int height;
 
@@ -34,7 +34,7 @@ public class LoginFrame extends JFrame implements ActionListener {
         shadePanel.setBounds(0, 0, width, height);
         ImgPanel imgPanel = new ImgPanel();
         imgPanel.setLayout(null);
-        shadePanel.setImgPath("loginBg2.jpg");
+        imgPanel.setImgPath("loginBg2.jpg");
         imgPanel.setBounds(700, 100, 500, 400);
 
         Font font = new Font("楷体", Font.PLAIN, 25);
@@ -71,19 +71,10 @@ public class LoginFrame extends JFrame implements ActionListener {
         centerBtn.addActionListener(this);
         centerBtn.setBounds(280, 300, 50, 35);
 
-//        confirmButton = new JButton("确认");
-//        confirmButton.setFont(font);
-//        cancelButton = new JButton("取消");
-//        cancelButton.setFont(font);
         accountLabel.setBounds(60, 150, 100, 35);
         accountField.setBounds(180, 150, 260, 35);
         passwordLabel.setBounds(60, 220, 100, 35);
         passwordField.setBounds(180, 220, 260, 35);
-//        cancelButton.setBounds(280, 300, 100, 35);
-//        cancelButton.setBackground(new Color(240, 240, 240));
-//        confirmButton.setBounds(60, 300, 100, 35);
-//        confirmButton.setBackground(new Color(240, 240, 240));
-
 
         imgPanel.add(accountLabel);
         imgPanel.add(accountField);
@@ -91,8 +82,7 @@ public class LoginFrame extends JFrame implements ActionListener {
         imgPanel.add(passwordField);
         imgPanel.add(loginBtn);
         imgPanel.add(centerBtn);
-//        imgPanel.add(confirmButton);
-//        imgPanel.add(cancelButton);
+
         shadePanel.add(imgPanel);
         add(shadePanel);
     }
@@ -110,7 +100,7 @@ public class LoginFrame extends JFrame implements ActionListener {
 /**
  * 继承JPanel的自定义面板，实现渐变背景色，paintComponent重绘组件
  */
-class ImgPanel extends JPanel {
+class ShadePanel extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g1) {
@@ -128,7 +118,7 @@ class ImgPanel extends JPanel {
 /**
  * 继承JPanel的自定义面板，绘制背景图
  */
-class ShadePanel extends JPanel {
+class ImgPanel extends JPanel {
     private String imgPath;
 
     public void setImgPath(String imgPath) {
@@ -148,7 +138,7 @@ class ShadePanel extends JPanel {
     }
 }
 
-    class BgButton extends JButton {
+class BgButton extends JButton {
     private String bgIcon;
 
     public void setBgIcon(String bgIcon) {

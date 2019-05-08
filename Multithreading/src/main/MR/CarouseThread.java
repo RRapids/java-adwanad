@@ -8,13 +8,14 @@ import java.util.Scanner;
 
 public class CarouseThread implements Runnable {
 
-    private String[] imgs = {"D:/carousel/1.jpg", "D:/carousel/2.jpg", "D:/carousel/3.jpg",
+    private String[] imgs = {"D:/carousel/0.png", "D:/carousel/1.jpg", "D:/carousel/3.jpg",
             "D:/carousel/4.jpg", "D:/carousel/5.jpg", "D:/carousel/6.jpg"};
     private JLabel bgLabel;
 
     public void setBgLabel(JLabel bgLabel) {
         this.bgLabel = bgLabel;
     }
+
     @Override
     public void run() {
         int i = 0;
