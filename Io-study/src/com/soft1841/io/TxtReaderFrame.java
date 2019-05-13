@@ -24,7 +24,7 @@ public class TxtReaderFrame extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
-    public void init(){
+    private void init(){
         //顶部面板
         inputFileld = new JTextField(20);
         inputFileld.setPreferredSize(new Dimension(150,40));

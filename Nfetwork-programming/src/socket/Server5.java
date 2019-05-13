@@ -10,6 +10,7 @@ import java.net.Socket;
  * 服务器向客户端发送信息——控制台
  * server段使用打印流向客户端输出文本内容
  */
+
 public class Server5 {
     public static void main(String[] args) throws IOException {
         ServerSocket ss = new ServerSocket(10086);

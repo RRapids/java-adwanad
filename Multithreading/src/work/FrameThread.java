@@ -24,7 +24,7 @@ public class FrameThread extends JFrame implements Runnable {
     private JTable jTable, recyclingTable;
     private JFileChooser jFileChooser;
     private JTextArea jTextArea, soupArea;
-    private CardLayout cardLayout;
+
 
     public FrameThread() {
         init();

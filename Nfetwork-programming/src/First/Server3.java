@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * 客户端向服务器发送文本文件
+ * 客户端向服务器发送文本文件——控制台
  */
 public class Server3 {
     public static void main(String[] args) throws IOException {
