@@ -1,4 +1,4 @@
-package work;
+package socket;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
