@@ -2,6 +2,9 @@ package com.soft1841.jdbc;
 
 import java.sql.*;
 
+/**
+ * JDBC起步练习
+ */
 public class JDBCDmeo1 {
     static  final String JDBC_DRIVER="com.mysql.jdbc.Driver";
     static final String DB_URL ="jdbc:mysql://localhost:3306/db_jdbc";
@@ -21,7 +24,6 @@ public class JDBCDmeo1 {
             int id = rs.getInt("id");
             String name = rs.getString("name");
             int age = rs.getInt("age");
-
             System.out.print("ID: "+ id);
             System.out.print("，姓名："+name);
             System.out.print("，年龄："+age);

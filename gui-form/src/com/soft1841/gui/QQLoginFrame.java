@@ -13,7 +13,6 @@ public class QQLoginFrame {
     private JButton button1;
 
     public static void main(String[] args) {
-
         JFrame frame = new JFrame("QQLoginFrame");
         frame.setContentPane(new QQLoginFrame().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -28,7 +28,5 @@ public class JDBCDemo3 {
         System.out.println(n+"行记录受影响");
         pstmt.close();
         conn.close();
-
-
     }
 }

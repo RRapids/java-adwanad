@@ -3,6 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
 /**
  * 删除指定id的数据库记录
  */
@@ -24,7 +25,5 @@ public class JDBCDemo4 {
         System.out.println(n+"行记录受影响");
         pstmt.close();
         conn.close();
-
-
     }
 }
