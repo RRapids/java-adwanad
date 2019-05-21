@@ -54,7 +54,6 @@ public class LoginFrame extends JFrame {
         accountField.setBounds(120, 60, 300, 35);
         passwordLabel.setBounds(50, 140, 100, 35);
         passwordField.setBounds(120, 140, 300, 35);
-
         comfirmButton.setBounds(100, 220, 70, 30);
         comfirmButton.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.green));
         cancelButton.setBounds(280, 220, 70, 30);

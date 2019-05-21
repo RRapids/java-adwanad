@@ -24,7 +24,6 @@ public class CarouseFrame extends JFrame {
         CarouseThread ct = new CarouseThread();
         ct.setBgLabel(bgLabel);
         new Thread(ct).start();
-
     }
 
     public static void main(String[] args) {
