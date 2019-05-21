@@ -1,5 +1,8 @@
 package com.soft1841.design;
 
+/**
+ * 单例模式
+ */
 public class Singleton {
     //创建Singleton的一个对象
     private static Singleton instancce = new Singleton();
